@@ -9,7 +9,7 @@ class Spaceship(models.Model):
     name = fields.Char("Name", required=True)
     dimensions = fields.Float("Dimension", help="Dimension expressed in cubic meters")
     fuel_type = fields.Selection(
-        "Fuel Type",
+        string="Fuel Type",
         selection=[
             ('liquid', 'Liquid'),
             ('solid', 'Solid'),
@@ -18,7 +18,7 @@ class Spaceship(models.Model):
         copy=False
     )
     ship_type = fields.Selection(
-        "Ship Type",
+        string="Ship Type",
         selection=[
             ('flyby', 'Flyby spacecraft'),
             ('orbiter', 'Orbiter spacecraft'),
