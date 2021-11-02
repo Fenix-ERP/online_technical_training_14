@@ -13,18 +13,18 @@ class Spaceship(models.Model):
         selection=[
             ('liquid', 'Liquid'),
             ('solid', 'Solid'),
-            ('hydrogen', 'Liquid Hydrogen'),
+            ('hydrogen', 'Liquid Hydrogen')
         ],
-        copy=False,
+        copy=False
     )
     ship_type = fields.Selection(
         "Ship Type",
         selection=[
             ('flyby', 'Flyby spacecraft'),
             ('orbiter', 'Orbiter spacecraft'),
-            ('lander', 'Lander spacecraft'),
+            ('lander', 'Lander spacecraft')
         ],
-        copy=False,
+        copy=False
     )
     passengers_number = fields.Integer("Number of passengers")
     active = fields.Boolean("Active", default=True)
