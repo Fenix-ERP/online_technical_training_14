@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="space_mission.spaceship" id="space_123">
+            <field name="name">Apollo</field>
+            <field name="dimensions">80</field>
+            <field name="fuel_type">liquid</field>
+            <field name="ship_type">flyby</field>
+            <field name="passengers_number">3</field>
+            <field name="active">1</field>
+        </record>
+        
+         <record model="space_mission.spaceship" id="space_456">
+            <field name="name">Apollo11</field>
+            <field name="dimensions">85</field>
+            <field name="fuel_type">solid</field>
+            <field name="ship_type">orbiter</field>
+            <field name="passengers_number">7</field>
+            <field name="active">1</field>
+        </record>
+        
+         <record model="space_mission.spaceship" id="space_789">
+            <field name="name">Pegazo</field>
+            <field name="dimensions">30</field>
+            <field name="fuel_type">hydrogen</field>
+            <field name="ship_type">lander</field>
+            <field name="passengers_number">0</field>
+            <field name="active">1</field>
+        </record>
+    </data>
+</odoo>
