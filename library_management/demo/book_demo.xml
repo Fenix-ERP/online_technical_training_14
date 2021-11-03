@@ -7,7 +7,7 @@
             <field name="editors">Doubleday</field>
             <field name="year_of_edition">1977</field>
             <field name="isbn">978-0-385-12167-5</field>
-            <field name="genere">terror</field>
+            <field name="genere">horror</field>
         </record>
         
          <record model="library.book" id="book0002">
@@ -16,7 +16,7 @@
             <field name="editors"></field>
             <field name="year_of_edition">1602</field>
             <field name="isbn"></field>
-            <field name="genere">dramatic</field>
+            <field name="genere">drama/field>
         </record>
         
          <record model="library.book" id="book0003">
@@ -25,7 +25,7 @@
             <field name="editors">Random House UK</field>
             <field name="year_of_edition">2021</field>
             <field name="isbn">9781785152566</field>
-            <field name="genere">comedia</field>
+            <field name="genere">comedy</field>
         </record>
     </data>
 </odoo>
