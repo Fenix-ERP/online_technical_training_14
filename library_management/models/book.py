@@ -10,7 +10,7 @@ class Book(models.Model):
     authors = fields.Text("Authors", required=True)
     editors = fields.Char("Editors", required=True)
     publisher = fields.Char("Publisher", required=True)
-    year_of_edition = fields.Date(string="Year of Edition")
+    year_of_edition = fields.Char("Year of Edition")
     isbn = fields.Char("ISBN", required=True)
     genere = fields.Selection([
         ('drama', 'Drama'),
