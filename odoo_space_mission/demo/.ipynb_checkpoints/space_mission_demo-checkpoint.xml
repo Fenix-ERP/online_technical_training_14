@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <record model="space_mission.spaceship" id="space_123">
+        <record model="space.spaceship" id="space_123">
             <field name="name">Apollo</field>
             <field name="dimensions">80</field>
             <field name="fuel_type">liquid</field>
@@ -10,7 +10,7 @@
             <field name="active">1</field>
         </record>
         
-         <record model="space_mission.spaceship" id="space_456">
+         <record model="space.spaceship" id="space_456">
             <field name="name">Apollo11</field>
             <field name="dimensions">85</field>
             <field name="fuel_type">solid</field>
@@ -19,7 +19,7 @@
             <field name="active">1</field>
         </record>
         
-         <record model="space_mission.spaceship" id="space_789">
+         <record model="space.spaceship" id="space_789">
             <field name="name">Pegazo</field>
             <field name="dimensions">30</field>
             <field name="fuel_type">hydrogen</field>

@@ -9,7 +9,8 @@
     "website": "",
     "depends": ["base"],
     "data": [
-        
+        "security/space_groups.xml",
+        "security/ir.model.access.csv",
     ],
     "demo": [
         "demo/space_mission_demo.xml"

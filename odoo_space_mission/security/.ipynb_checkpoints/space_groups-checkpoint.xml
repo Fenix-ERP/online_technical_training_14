@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="res.groups" id="space_admin">
+            <field name="name">Admin</field>
+        </record>
+
+        <record model="res.groups" id="space_crew">
+            <field name="name">Space Crew</field>
+        </record>
+
+        <record model="res.groups" id="space_general_user">
+            <field name="name">General User</field>
+        </record>
+    </data>
+</odoo>
