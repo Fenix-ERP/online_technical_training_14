@@ -5,6 +5,7 @@
             <field name="name">The Shining</field>
             <field name="authors">Stephen King</field>
             <field name="editors">Doubleday</field>
+            <field name="publisher">none</field>
             <field name="year_of_edition">1977</field>
             <field name="isbn">978-0-385-12167-5</field>
             <field name="genere">horror</field>
@@ -14,6 +15,7 @@
             <field name="name">Hamlet</field>
             <field name="authors">William Shakespeare</field>
             <field name="editors">none</field>
+            <field name="publisher">none</field>
             <field name="year_of_edition">1602</field>
             <field name="isbn">none</field>
             <field name="genere">drama</field>
@@ -23,6 +25,7 @@
             <field name="name">Everyone You Hate Is Going to Die</field>
             <field name="authors">Daniel Sloss</field>
             <field name="editors">Random House UK</field>
+            <field name="publisher">none</field>
             <field name="year_of_edition">2021</field>
             <field name="isbn">9781785152566</field>
             <field name="genere">comedy</field>
