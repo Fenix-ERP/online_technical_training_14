@@ -16,7 +16,7 @@
             <field name="editors"></field>
             <field name="year_of_edition">1602</field>
             <field name="isbn"></field>
-            <field name="genere">drama/field>
+            <field name="genere">drama</field>
         </record>
         
          <record model="library.book" id="book0003">
