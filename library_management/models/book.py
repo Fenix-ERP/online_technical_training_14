@@ -13,10 +13,10 @@ class Book(models.Model):
     year_of_edition = fields.Date(string="Year of Edition")
     isbn = fields.Char("ISBN", required=True)
     genere = fields.Selection([
-        ('dramatic', 'Dramatic'),
-        ('terror', 'Terror'),
-        ('comedia', 'Comedy')
-    ],"Genere", required=True)
+        ('drama', 'Drama'),
+        ('horror', 'Horror'),
+        ('comedy', 'Comedy')
+    ], "Genere", required=True)
     
     
    

@@ -12,6 +12,6 @@
         
     ],
     "demo": [
-        
+        "demo/task_demo.xml"
     ],
 }

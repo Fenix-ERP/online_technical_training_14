@@ -12,6 +12,6 @@
         
     ],
     "demo": [
-        
+        "demo/book_demo.xml",
     ],
 }
