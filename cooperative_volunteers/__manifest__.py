@@ -11,6 +11,7 @@
     "data": [
         "security/volunteers_groups.xml",
         "security/ir.model.access.csv",
+        "views/volunteers_menuitems.xml",
     ],
     "demo": [
         "demo/task_demo.xml"
