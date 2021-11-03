@@ -3,8 +3,8 @@
     <data noupdate="1">
         <record model="volunteers.task" id="task0001">
             <field name="name">Complaints attention</field>
-            <field name="datetime_start">2021-11-04 09:00:00</field>
-            <field name="datetime_stop">2021-11-04 11:00:00</field>
+            <field name="datetime_start">2021-11-04T09:00:00.000000</field>
+            <field name="datetime_stop">2021-11-04T11:00:00.000000</field>
             <field name="repeat">False</field>
             <field name="frequency"></field>
             <field name="task_type">customer</field>
@@ -12,8 +12,8 @@
         
         <record model="volunteers.task" id="task0002">
             <field name="name">Attention at the counter</field>
-            <field name="datetime_start">2021-11-04 11:00:00</field>
-            <field name="datetime_stop">2021-11-04 13:00:00</field>
+            <field name="datetime_start">2021-11-04T11:00:00.000000</field>
+            <field name="datetime_stop">2021-11-04T13:00:00.000000</field>
             <field name="repeat">False</field>
             <field name="frequency"></field>
             <field name="task_type">sales</field>
@@ -21,8 +21,8 @@
         
         <record model="volunteers.task" id="task0003">
             <field name="name">Lunch Time</field>
-            <field name="datetime_start">2021-11-04 11:00:00</field>
-            <field name="datetime_stop">2021-11-04 14:00:00</field>
+            <field name="datetime_start">2021-11-04T11:00:00.000000</field>
+            <field name="datetime_stop">2021-11-04T14:00:00.000000</field>
             <field name="repeat">True</field>
             <field name="frequency">Weekdays</field>
             <field name="task_type">lunch</field>
@@ -30,8 +30,8 @@
         
         <record model="volunteers.task" id="task0004">
             <field name="name">Usher service</field>
-            <field name="datetime_start">2021-11-04 14:00:00</field>
-            <field name="datetime_stop">2021-11-04 17:00:00</field>
+            <field name="datetime_start">2021-11-04T14:00:00.000000</field>
+            <field name="datetime_stop">2021-11-04T17:00:00.000000</field>
             <field name="repeat">False</field>
             <field name="frequency"></field>
             <field name="task_type">usher</field>
