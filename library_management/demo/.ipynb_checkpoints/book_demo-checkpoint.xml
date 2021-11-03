@@ -13,9 +13,9 @@
          <record model="library.book" id="book0002">
             <field name="name">Hamlet</field>
             <field name="authors">William Shakespeare</field>
-            <field name="editors"></field>
+            <field name="editors">none</field>
             <field name="year_of_edition">1602</field>
-            <field name="isbn"></field>
+            <field name="isbn">none</field>
             <field name="genere">drama</field>
         </record>
         
