@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="res.groups" id="head_volunteers">
+            <field name="name">Head Volunteers</field>
+        </record>
+
+        <record model="res.groups" id="volunteers">
+            <field name="name">Volunteers</field>
+        </record>
+    </data>
+</odoo>
