@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="res.groups" id="library_librarian">
+            <field name="name">Librarians</field>
+        </record>
+
+        <record model="res.groups" id="library_customer">
+            <field name="name">Customers</field>
+        </record>
+    </data>
+</odoo>

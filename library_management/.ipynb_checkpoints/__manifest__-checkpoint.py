@@ -9,7 +9,8 @@
     "website": "",
     "depends": ["base"],
     "data": [
-        
+        "security/library_groups.xml",
+        "security/ir.model.access.csv",
     ],
     "demo": [
         "demo/book_demo.xml",
