@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="space_mission_spaceship_form_view" model="ir.ui.view">
+            <field name="name">space.mission.spaceship.form.view</field>
+            <field name="model">space.spaceship</field>
+            <field name="arch" type="xml">
+                <form string="Purchase Requisition Form">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="dimensions" />
+                                <field name="passengers_number" />
+                                <field name="active" />
+                            </group>
+                            <group>
+                                <field name="fuel_type" />
+                                <field name="ship_type" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Tree View -->
+        <record id="space_mission_spaceship_tree_view" model="ir.ui.view">
+            <field name="name">space.mission.spaceship.tree.view</field>
+            <field name="model">space.spaceship</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceships list">
+                    <field name="name" />
+                    <field name="ship_type" />
+                    <field name="passengers_number" />
+                </tree>
+            </field>
+        </record>
+        
+        <!-- Search view -->
+        <record id="space_mission_spaceship_seach_view" model="ir.ui.view">
+            <field name='name'>space.mission.spaceship.search.view</field>
+            <field name='model'>space.spaceship</field>
+            <field name='arch' type='xml'>
+                <search string="search">
+                    <field name="name" />
+                    <field name="ship_type" />
+                    <field name="passengers_number" />
+                    <filter name='active' string="Active spaceships" domain="[('active', '=', True)]"/>
+                    <filter name='active' string="Inactive spaceships" domain="[('active', '=', False)]"/>
+                    <separator />
+                    <filter name='passengers_number' string="Under 10 passengers" domain="[('passengers_number', '&lt;', 10)]"/>
+                    <group expand="0" string="Group By">
+                        <filter
+                            name="fuel_type"
+                            string="Fuel type"
+                            context="{'group_by': 'fuel_type'}"
+                        />
+                        <filter
+                            name="ship_type"
+                            string="Ship type"
+                            context="{'group_by': 'ship_type'}"
+                        />
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

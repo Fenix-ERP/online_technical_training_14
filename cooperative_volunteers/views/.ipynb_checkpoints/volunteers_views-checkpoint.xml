@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="volunteers_task_form_view" model="ir.ui.view">
+            <field name="name">volunteers.task.form.view</field>
+            <field name="model">volunteers.task</field>
+            <field name="arch" type="xml">
+                <form string="Cooperative Volunteers Form">
+                    <sheet>
+        
+                        <h1><field name="name"/> </h1>
+                       
+                        <group>
+                            <group>
+                                <field name="datetime_start" />
+                                <field name="datetime_stop" />
+                                <field name="repeat" />
+                            </group>
+                            <group>
+                                <field name="frequency" />
+                                <field name="task_type" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Tree View -->
+        <record id="volunteers_task_tree_view" model="ir.ui.view">
+            <field name="name">volunteers.task.tree.view</field>
+            <field name="model">volunteers.task</field>
+            <field name="arch" type="xml">
+                <tree string="Volunteers list">
+                    <field name="name" />
+                    <field name="task_type"/>
+                </tree>
+            </field>
+        </record>
+        
+        <!-- Search view -->
+        <record id="volunteers_task_search_view" model="ir.ui.view">
+            <field name='name'>volunteers.task.search.view</field>
+            <field name='model'>volunteers.task</field>
+            <field name='arch' type='xml'>
+                <search string="search">
+                    <field name="name" />
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

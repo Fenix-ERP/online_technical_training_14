@@ -12,6 +12,7 @@
         "security/space_groups.xml",
         "security/ir.model.access.csv",
         "views/space_menuitems.xml",
+        "views/space_views.xml",
     ],
     "demo": [
         "demo/space_mission_demo.xml"

@@ -7,7 +7,7 @@ class Book(models.Model):
     _description = "Book model for library management"
     
     name = fields.Char("Name", required=True)
-    authors = fields.Text("Authors", required=True)
+    authors = fields.Char("Authors", required=True)
     editors = fields.Char("Editors", required=True)
     publisher = fields.Char("Publisher", required=True)
     year_of_edition = fields.Char("Year of Edition")
@@ -17,6 +17,7 @@ class Book(models.Model):
         ('horror', 'Horror'),
         ('comedy', 'Comedy')
     ], "Genere", required=True)
+    note = fields.Text("Note")
     
     
    

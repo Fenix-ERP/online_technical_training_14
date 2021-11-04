@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="library_management_form_view" model="ir.ui.view">
+            <field name="name">library.management.form.view</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <form string="Library Book Form">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="authors" />
+                                <field name="editors" />
+                                <field name="publisher" />
+                            </group>
+                            <group>
+                                <field name="year_of_edition" />
+                                <field name="isbn" />
+                                <field name="genere" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Notes">
+                                <field name="note"/>
+                            </page>
+                        </notebook>
+                            
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Search view -->
+        <record id="library_management_search_view" model="ir.ui.view">
+            <field name='name'>library.management.form.view</field>
+            <field name='model'>library.book</field>
+            <field name='arch' type='xml'>
+                <search string="search">
+                    <field name="authors" />
+                    <field name="isbn" />
+                    <group expand="0" string="Group By">
+                        <filter
+                            name="authors"
+                            string="Authors"
+                            context="{'group_by': 'authors'}"
+                        />
+                        <filter
+                            name="isbn"
+                            string="ISBN"
+                            context="{'group_by': 'isbn'}"
+                        />
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

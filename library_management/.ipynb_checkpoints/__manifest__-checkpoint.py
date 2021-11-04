@@ -12,6 +12,7 @@
         "security/library_groups.xml",
         "security/ir.model.access.csv",
         "views/book_menuitems.xml",
+        "views/library_views.xml",
     ],
     "demo": [
         "demo/book_demo.xml",

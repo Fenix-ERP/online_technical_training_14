@@ -12,6 +12,8 @@
         "security/volunteers_groups.xml",
         "security/ir.model.access.csv",
         "views/volunteers_menuitems.xml",
+        "views/volunteers_views.xml",
+        
     ],
     "demo": [
         "demo/task_demo.xml"
