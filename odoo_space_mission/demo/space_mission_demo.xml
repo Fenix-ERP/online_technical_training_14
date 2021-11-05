@@ -3,7 +3,8 @@
     <data noupdate="1">
         <record model="space.spaceship" id="space_123">
             <field name="name">Apollo</field>
-            <field name="dimensions">80</field>
+            <field name="length">100.0</field>
+            <field name="width">20.0</field>
             <field name="fuel_type">liquid</field>
             <field name="ship_type">flyby</field>
             <field name="passengers_number">3</field>
@@ -12,7 +13,8 @@
         
          <record model="space.spaceship" id="space_456">
             <field name="name">Apollo11</field>
-            <field name="dimensions">85</field>
+            <field name="length">150.0</field>
+            <field name="width">50.0</field>
             <field name="fuel_type">solid</field>
             <field name="ship_type">orbiter</field>
             <field name="passengers_number">7</field>
@@ -21,7 +23,8 @@
         
          <record model="space.spaceship" id="space_789">
             <field name="name">Pegazo</field>
-            <field name="dimensions">30</field>
+            <field name="length">80.0</field>
+            <field name="width">16.0</field>
             <field name="fuel_type">hydrogen</field>
             <field name="ship_type">lander</field>
             <field name="passengers_number">0</field>
