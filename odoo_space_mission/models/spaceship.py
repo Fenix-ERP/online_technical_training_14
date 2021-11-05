@@ -42,5 +42,5 @@ class Spaceship(models.Model):
     @api.constrains('length','width')
     def _constrain_dimension(self):
         for record in self:
-            if width > length:
+            if record.width > record.length:
                 raise UserError("The width of the spaceship can't be bigger than the length")
