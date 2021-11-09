@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <record id="space_action_window" model="ir.actions.act_window">
-            <field name="name">Space Mission</field>
+            <field name="name">Spaceship</field>
             <field name="res_model">space.spaceship</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -12,10 +12,23 @@
             </field>
         </record>
         
+        <record id="space_mission_window" model="ir.actions.act_window">
+            <field name="name">Space Mission</field>
+            <field name="res_model">space.mission</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first mission
+                </p>
+            </field>
+        </record>
+        
         <menuitem id="menu_space_mission" name="Space Mission" sequence="100"
                   web_icon="odoo_space_mission,static/description/icon.png"/>
         <menuitem id="submenu_space_mission" name="Sub Space Mission" parent="menu_space_mission" sequence="100"/>
-        <menuitem id="submenu_space_mission_spaceship" name="Spaceship" parent="submenu_space_mission" sequence="1"
+        <menuitem id="submenu_space_mission_spaceship" name="Spaceship" parent="submenu_space_mission" sequence="2"
                   action="space_action_window"/>
+        <menuitem id="submenu_space_mission_mission" name="Space Mission" parent="submenu_space_mission" sequence="1"
+                  action="space_mission_window"/>
     </data>
 </odoo>

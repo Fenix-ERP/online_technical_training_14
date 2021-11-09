@@ -22,6 +22,18 @@
                                 <field name="task_type" />
                             </group>
                         </group>
+                        <notebook name="main_book">
+                            <page name="volunteers_page" string="Volunteers">
+                                <field name="volunteer_ids">
+                                    <tree editable="bottom">
+                                        <field name="name" />
+                                        <field name="phone" />
+                                        <field name="email" />
+                                        <field name="city" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

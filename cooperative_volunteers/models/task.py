@@ -21,3 +21,4 @@ class Task(models.Model):
         ],
         copy=False
     )
+    volunteer_ids = fields.Many2many("res.partner", string="Volunteers", required=True)

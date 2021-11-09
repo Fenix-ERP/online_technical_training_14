@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="library_rental_form_view" model="ir.ui.view">
+            <field name="name">library.rental.form.view</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+                <form string="Library Rental Form">
+                    <sheet>
+<!--                         <div class="oe_title">
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div> -->
+                        <group>
+                            <group>
+                                <field name="book_id" />
+                            </group>
+                        </group>
+                        <notebook name="main_book">
+                            <page name="crew_members" string="Customer">
+                                <field name="customer">
+                                    <tree editable="bottom">
+                                        <field name="name" />
+                                        <field name="phone" />
+                                        <field name="email" />
+                                        <field name="city" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Tree View -->
+        <record id="library_rental_tree_view" model="ir.ui.view">
+            <field name="name">library.rental.tree.view</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+                <tree string="Rental List">
+                    <field name="book_id" />
+                    <field name="customer" widget="many2many_tags" />
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

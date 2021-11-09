@@ -13,6 +13,8 @@
         "security/ir.model.access.csv",
         "views/book_menuitems.xml",
         "views/library_views.xml",
+        "views/rental_views.xml",
+        
     ],
     "demo": [
         "demo/book_demo.xml",
