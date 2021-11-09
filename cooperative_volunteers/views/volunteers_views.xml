@@ -20,6 +20,7 @@
                             <group>
                                 <field name="frequency" />
                                 <field name="task_type" />
+                                <field name="leader"/>
                             </group>
                         </group>
                         <notebook name="main_book">
@@ -48,6 +49,18 @@
                     <field name="name" />
                     <field name="task_type"/>
                 </tree>
+            </field>
+        </record>
+        
+         <!-- Gantt View -->
+        <record id="volunteers_task_gantt_view" model="ir.ui.view">
+            <field name="name">volunteers.task.gantt.view</field>
+            <field name="model">volunteers.task</field>
+            <field name="arch" type="xml">
+                <gantt string="Volunteers Gantt" date_start="datetime_start"
+                       date_stop="datetime_stop"
+                       default_group_by="leader">
+                </gantt>
             </field>
         </record>
         

@@ -7,7 +7,7 @@
     "author": "Joseph Armas",
     "category": "Training",
     "website": "",
-    "depends": ["base"],
+    "depends": ["base", "web_map"],
     "data": [
         "security/library_groups.xml",
         "security/ir.model.access.csv",

@@ -15,10 +15,12 @@
                         </div> -->
                         <group>
                             <group>
+                                <field name="name" />
                                 <field name="book_id" />
+                                <field name="customer" />
                             </group>
                         </group>
-                        <notebook name="main_book">
+<!--                         <notebook name="main_book">
                             <page name="crew_members" string="Customer">
                                 <field name="customer">
                                     <tree editable="bottom">
@@ -29,7 +31,7 @@
                                     </tree>
                                 </field>
                             </page>
-                        </notebook>
+                        </notebook> -->
                     </sheet>
                 </form>
             </field>
@@ -42,8 +44,20 @@
             <field name="arch" type="xml">
                 <tree string="Rental List">
                     <field name="book_id" />
-                    <field name="customer" widget="many2many_tags" />
+                    <field name="customer" />
                 </tree>
+            </field>
+        </record>
+        
+        <!-- Map View -->
+        <record id="library_rental_map_view" model="ir.ui.view">
+            <field name="name">library.rental.map.view</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+                <map res_partner="customer">
+                    <field name="book_id" string="Book" />
+                    <field name="customer" string="Customer" />
+                </map>
             </field>
         </record>
     </data>
