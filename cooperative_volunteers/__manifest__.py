@@ -7,13 +7,13 @@
     "author": "Joseph Armas",
     "category": "Training",
     "website": "",
-    "depends": ["base"],
+    "depends": ["base","approvals"],
     "data": [
         "security/volunteers_groups.xml",
         "security/ir.model.access.csv",
         "views/volunteers_menuitems.xml",
         "views/volunteers_views.xml",
-        
+        "views/approval_views.xml",
     ],
     "demo": [
         "demo/task_demo.xml"

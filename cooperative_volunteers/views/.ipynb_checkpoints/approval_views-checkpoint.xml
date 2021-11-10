@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Form  View -->
+        <record id="approvals_approval_task_view_form" model="ir.ui.view">
+            <field name="name">approvals.approval.task.view.form</field>
+            <field name="model">approval.request</field>
+            <field name="inherit_id" ref="approvals.approval_request_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="task_id" />
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</odoo>

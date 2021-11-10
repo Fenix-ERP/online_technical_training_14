@@ -20,10 +20,13 @@ class Book(models.Model):
     ], "Genere", required=True)
     note = fields.Text("Note")
     
+    book_copy_id = fields.One2many("library.book.copy", "book_id", "Copies")
+    
     @api.onchange('isbn')
     def _onchange_length_isbn(self):
-        if len(self.isbn) != 13:
-            raise ValidationError("The isbn must be 13 characters long")
+        if self.isbn:
+            if len(self.isbn) != 13:
+                raise ValidationError("The isbn must be 13 characters long")
             
     
     

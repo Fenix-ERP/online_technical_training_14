@@ -25,10 +25,13 @@
         
         <menuitem id="menu_library_book" name="Library" sequence="100"
                   web_icon="library_management,static/description/icon.png"/>
+        
         <menuitem id="submenu_library_book" name="Sub Library book" parent="menu_library_book" sequence="1"/>
+        
         <menuitem id="submenu_book" name="Book" parent="submenu_library_book" sequence="1"
                   action="book_action_window"/>
-         <menuitem id="submenu_book" name="Rental" parent="submenu_library_book" sequence="1"
+        
+         <menuitem id="submenu_rental" name="Rental" parent="submenu_library_book" sequence="2"
                   action="rental_action_window"/>
     </data>
 </odoo>

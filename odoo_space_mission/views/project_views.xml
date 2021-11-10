@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Form Simplified View -->
+        <record id="project_project_view_form_simplified_mission" model="ir.ui.view">
+            <field name="name">project.project.view.form.simplified.mission</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.project_project_view_form_simplified"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="mission_id" groups="odoo_space_mission.space_admin"/>
+                </xpath>
+            </field>
+        </record>
+        
+        <!-- Form View -->
+        <record id="edit_project_mission" model="ir.ui.view">
+            <field name="name">edit.project.mission</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('oe_button_box')]/button[@name='attachment_tree_view']" position="before">
+                    <button class="oe_stat_button" name="mission_form_view" type="object" icon="fa-space-shuttle">
+                        <div class="o_stat_info">
+                            <field name="mission_id"/>
+                            <span class="o_stat_text"> Mission </span>
+                        </div>
+                    </button>
+                </xpath>
+                
+                <xpath expr="//div[@name='options_active']" position="inside">
+                    <div>
+                        <label for="mission_id" class="oe_inline" string="Name of the mission:"/>
+                        <field name="mission_id" class="oe_inline oe_input_align"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

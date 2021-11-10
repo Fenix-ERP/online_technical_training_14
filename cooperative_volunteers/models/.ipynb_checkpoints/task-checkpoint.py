@@ -23,4 +23,6 @@ class Task(models.Model):
     )
     volunteer_ids = fields.Many2many("res.partner", string="Volunteers", required=True)
     
+    approval_ids = fields.One2many("approval.request", "task_id", "Approvals", required=True)
+    
     leader = fields.Many2one("res.partner", string="Leader")

@@ -20,6 +20,8 @@ class Mission(models.Model):
     engines_number = fields.Integer("Number of Engines", required=True, default=1)
     safety_features = fields.Text("Safety Features")
     
+    project_ids = fields.One2many("project.project", "mission_id", "Projects", required=True)
+    
     @api.depends('launch_date','return_date','engines_number')
     def _compute_fuel_amount(self):
         for record in self:

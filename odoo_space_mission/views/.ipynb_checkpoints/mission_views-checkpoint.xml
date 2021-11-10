@@ -35,8 +35,19 @@
                                     </tree>
                                 </field>
                             </page>
-                            <field name="safety_features" />
+                            <page name="projects" string="Projects">
+                                <field name="project_ids">
+                                    <tree editable="bottom">
+                                        <field name="name" />
+                                        <field name="date_start" />
+                                        <field name="date" />
+                                        <field name="description" />
+                                    </tree>
+                                </field>
+                            </page>
                         </notebook>
+                        <label for="safety_features"/>
+                        <field name="safety_features" />
                     </sheet>
                 </form>
             </field>

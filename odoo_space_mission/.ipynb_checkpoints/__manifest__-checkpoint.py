@@ -7,13 +7,14 @@
     "author": "Joseph Armas",
     "category": "Training",
     "website": "",
-    "depends": ["base", "contacts"],
+    "depends": ["base", "contacts", "project"],
     "data": [
         "security/space_groups.xml",
         "security/ir.model.access.csv",
         "views/space_menuitems.xml",
         "views/spaceship_views.xml",
         "views/mission_views.xml",
+        "views/project_views.xml",
     ],
     "demo": [
         "demo/space_mission_demo.xml"

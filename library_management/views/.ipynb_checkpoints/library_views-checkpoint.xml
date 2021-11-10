@@ -35,7 +35,18 @@
                 </form>
             </field>
         </record>
-        
+        <!--   Tree view       -->
+        <record id="library_management_tree_view" model="ir.ui.view">
+            <field name="name">library.management.tree.view</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree string="Library list">
+                    <field name="name" />
+                    <field name="genere"/>
+                    <field name="isbn" />
+                </tree>
+            </field>
+        </record>
         <!-- Search view -->
         <record id="library_management_search_view" model="ir.ui.view">
             <field name='name'>library.management.form.view</field>
