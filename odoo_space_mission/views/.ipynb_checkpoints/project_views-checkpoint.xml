@@ -22,7 +22,7 @@
                 <xpath expr="//div[hasclass('oe_button_box')]/button[@name='attachment_tree_view']" position="before">
                     <button class="oe_stat_button" name="mission_form_view" type="object" icon="fa-space-shuttle">
                         <div class="o_stat_info">
-                            <field name="mission_id"/>
+                            <field name="mission_id" readonly="1"/>
                             <span class="o_stat_text"> Mission </span>
                         </div>
                     </button>

@@ -36,8 +36,8 @@
                                 </field>
                             </page>
                             <page name="projects" string="Projects">
-                                <field name="project_ids">
-                                    <tree editable="bottom">
+                                <field name="project_ids" readonly="1">
+                                    <tree>
                                         <field name="name" />
                                         <field name="date_start" />
                                         <field name="date" />

@@ -14,3 +14,4 @@ class Project(models.Model):
         action['domain'] = [('id', 'in', self.mission_id.ids)]
         
         return action
+    

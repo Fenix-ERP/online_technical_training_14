@@ -3,3 +3,4 @@ access_book_librarian,access_book_librarian,model_library_book,library_librarian
 access_book_copy_librarian,access_book_copy_librarian,model_library_book_copy,library_librarian,1,1,1,1
 access_book_customer,access_book_customer,model_library_book,library_customer,1,0,0,0
 access_rental_customer,access_rental_customer,model_library_rental,library_librarian,1,1,1,1
+access_customer_librarian_wizard,access_customer_librarian_wizard,model_library_customer_wizard,library_librarian,1,1,1,1

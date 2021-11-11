@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Wizard Form View -->
+        <record id="library_customer_wizard_form_view" model="ir.ui.view">
+            <field name="name">library.customer.wizard.form.view</field>
+            <field name="model">library.customer.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Customers">
+                    <group>
+                        <field name="customers" />
+                    </group>
+<!--                     <notebook>
+                        <page string="Rentals">
+                            
+                        </page>
+                    </notebook> -->
+                </form>
+            </field>
+        </record>
+        
+        <!-- Create project button in mission action -->
+        <record id="action_search_cutomer" model="ir.actions.act_window">
+            <field name="name">List Customers</field>
+            <field name="res_model">library.customer.wizard</field>
+            <field name="view_mode">tree</field>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="model_library_book" />
+        </record>
+    </data>
+</odoo>

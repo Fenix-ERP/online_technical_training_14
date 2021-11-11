@@ -15,6 +15,7 @@
         "views/spaceship_views.xml",
         "views/mission_views.xml",
         "views/project_views.xml",
+        "wizards/project_wizard.xml",
     ],
     "demo": [
         "demo/space_mission_demo.xml"
